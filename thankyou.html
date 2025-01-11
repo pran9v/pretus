@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Pretus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.png">
+    <style>
+        .thankyou-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thankyou-content {
+            text-align: center;
+        }
+
+        .thankyou-content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .checkmark {
+            font-size: 4em;
+            color: #28a745;
+            margin: 20px 0;
+        }
+
+        .order-details {
+            margin: 20px 0;
+        }
+
+        .order-details img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .order-details h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .order-details .price {
+            font-size: 1.2em;
+            color: rgba(252, 209, 69, 1);
+            font-weight: 600;
+        }
+
+        .confirmation-message {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .confirmation-message .message-primary {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .confirmation-message .order-number {
+            font-size: 1.1em;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .confirmation-message .message-secondary {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .next-steps {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .next-steps h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .next-steps ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #666;
+        }
+
+        .cta-buttons {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .cta-buttons .button.primary {
+            background-color: rgba(252, 209, 69, 1);
+            color: black;
+        }
+
+        .cta-buttons .button.primary:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid yellow;
+        }
+
+        .cta-buttons .button.secondary {
+            background-color: #333;
+            color: white;
+        }
+
+        .cta-buttons .button.secondary:hover {
+            background-color: #555;
+        }
+
+        .support-info {
+            margin: 20px 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, rgb(233, 239, 44), rgb(10, 10, 2));
+            -webkit-background-clip: text;
+            /* Clip the background to the text */
+            -webkit-text-fill-color: transparent;
+            /* Make the text transparent */
+            background-clip: text;
+            /* Standard property for modern browsers */
+            text-fill-color: transparent;
+            /* Standard property for modern browsers */
+        }
+
+        @media (max-width: 768px) {
+
+            .thankyou-container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .thankyou-content h1 {
+                font-size: 1.8em;
+            }
+
+            .order-details img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .order-details h2 {
+                font-size: 1.3em;
+            }
+
+            .order-details .price {
+                font-size: 1.1em;
+            }
+
+            .confirmation-message .message-primary {
+                font-size: 1.1em;
+            }
+
+            .confirmation-message .message-secondary {
+                font-size: 0.9em;
+            }
+
+            .next-steps h3 {
+                font-size: 1.2em;
+            }
+
+            .next-steps ul {
+                font-size: 0.9em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thankyou-content h1 {
+                font-size: 1.5em;
+            }
+
+            .checkmark {
+                font-size: 3em;
+            }
+
+            .order-details img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .order-details h2 {
+                font-size: 1.2em;
+            }
+
+            .order-details .price {
+                font-size: 1em;
+            }
+
+            .confirmation-message .message-primary {
+                font-size: 1em;
+            }
+
+            .confirmation-message .message-secondary {
+                font-size: 0.8em;
+            }
+
+            .next-steps h3 {
+                font-size: 1.1em;
+            }
+
+            .next-steps ul {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+
+<body >
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="gradient-text">Pretus</a> <!-- Make the logo text clickable -->
+            </div>
+            <ul>
+                <li><a href="index.html" data-page="home-page">Home</a></li>
+                <li><a href="contact.html" data-page="contact-page">Contact</a></li>
+                <li><a href="privacy.html" data-page="privacy-page">Privacy Policy</a></li>
+                <li><a href="terms.html" data-page="terms-page">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="thankyou-container">
+        <div class="thankyou-content">
+            <h1>Thank You for Your Purchase!</h1>
+            <div class="checkmark">✓</div>
+            <div class="order-details">
+                <img id="productImage" alt="Product" class="product-thumbnail">
+                <h2 id="productName"></h2>
+                <p id="productPrice" class="price"></p>
+            </div>
+            <div class="confirmation-message">
+                <p class="message-primary">Your order has been successfully placed and confirmed!</p>
+                <p class="order-number">Order #<span id="orderNumber"></span></p>
+                <p class="message-secondary">We're thrilled that you chose to shop with us. Your trust means everything
+                    to us, and we're committed to delivering an exceptional experience.</p>
+                <div class="next-steps">
+                    <h3>What's Next?</h3>
+                    <ul>
+                        <li>You'll receive an order confirmation email shortly</li>
+                        <li>We'll notify you when your order ships</li>
+                        <li>Estimated delivery: 3-5 business days</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="index.html" class="button primary">Continue Shopping</a>
+                <button onclick="trackOrder()" class="button secondary">Track Order</button>
+            </div>
+            <div class="support-info">
+                <p>Need help? Our support team is here for you 24/7</p>
+                <p>Email: support@pretus.com | Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@pretus.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pretus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get URL parameters
+            const params = new URLSearchParams(window.location.search);
+
+            // Update product details
+            document.getElementById('productName').textContent = params.get('name') || 'Your Product';
+            document.getElementById('productPrice').textContent = params.get('price') || '$0.00';
+
+            const productImage = document.getElementById('productImage');
+            productImage.src = params.get('image') || 'https://picsum.photos/100/100';
+
+            // Generate random order number
+            const orderNumber = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('orderNumber').textContent = orderNumber;
+        });
+
+        function trackOrder() {
+            alert('Order tracking will be available soon!');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pretus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.png">
+    <style>
+        /* Testimonials Section */
+        .testimonials {
+            padding: 6rem 2rem;
+            background-color: #f7fafc;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, rgb(233, 239, 44), rgb(10, 10, 2));
+            /* Gradient background */
+            -webkit-background-clip: text;
+            /* Clip the background to the text */
+            -webkit-text-fill-color: transparent;
+            /* Make the text transparent */
+            background-clip: text;
+            /* Standard property for Firefox */
+            text-fill-color: transparent;
+            /* Standard property for Firefox */
+        }
+
+        .testimonials-slider {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .testimonial-card p {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            font-size: 1rem;
+            color: rgb(133, 133, 2);
+            font-weight: 600;
+        }
+
+        .testimonial-author span {
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        /* Swiper Pagination */
+        .swiper-pagination-bullet {
+            background: #000000;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: rgb(0, 0, 0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .testimonials {
+                padding: 4rem 1.5rem;
+            }
+
+            .testimonials h2 {
+                font-size: 2rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .testimonial-card p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonials {
+                padding: 3rem 1rem;
+            }
+
+            .testimonials h2 {
+                font-size: 1.75rem;
+            }
+
+            .testimonial-card {
+                padding: 1rem;
+            }
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            padding: 6rem 2rem;
+            background-color: #f7fafc;
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .newsletter h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, rgb(233, 239, 44), rgb(10, 10, 2));
+            /* Gradient text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .newsletter p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            width: 300px;
+            max-width: 100%;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .newsletter-form input:focus {
+            border-color: #3182ce;
+        }
+
+        .newsletter-form button {
+            padding: 1rem 2rem;
+            background: rgba(252, 209, 69, 1);
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: white;
+            color: black;
+            transform: translateY(-2px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, rgb(233, 239, 44), rgb(10, 10, 2));
+            -webkit-background-clip: text;
+            /* Clip the background to the text */
+            -webkit-text-fill-color: transparent;
+            /* Make the text transparent */
+            background-clip: text;
+            /* Standard property for modern browsers */
+            text-fill-color: transparent;
+            /* Standard property for modern browsers */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .newsletter {
+                padding: 4rem 1.5rem;
+            }
+
+            .newsletter h2 {
+                font-size: 2rem;
+            }
+
+            .newsletter p {
+                font-size: 1rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-form input {
+                width: 100%;
+            }
+
+            .newsletter-form button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .newsletter {
+                padding: 3rem 1rem;
+            }
+
+            .newsletter h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="gradient-text">Pretus</a> <!-- Make the logo text clickable -->
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Slider -->
+    <div class="swiper banner-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/top-view-engagement-ring-cloth_23-2148966198.jpg?t=st=1736600469~exp=1736604069~hmac=52e61166580e75d2643e5ac3c00d377bdd1aedfe074f424c68f7e8195f34faba&w=1380"
+                    alt="Banner 1">
+                <div class="slide-content">
+                    <h2>Timeless Elegance, Modern Sophistication</h2>
+                    <p>Discover Jewelry That Tells Your Story</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/background-engagement-elegant-gift-love-accessory_1400-27.jpg?t=st=1736600526~exp=1736604126~hmac=c45e22828884be8f47b71fe04acaca12ae8ae72a01de92547572b2f92f7a46f7&w=1380"
+                    alt="Banner 2">
+                <div class="slide-content">
+                    <h2>Crafted for You, Designed for Forever</h2>
+                    <p>Jewelry That Speaks to Your Soul</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/little-pieces-diamonds_144627-21619.jpg?t=st=1736600616~exp=1736604216~hmac=d227c3e32bddb8becbde89daf7a296bd2bdd86425d90b8227ec992c33c55e1bb&w=1060"
+                    alt="Banner 3">
+                <div class="slide-content">
+                    <h2>Unwrap the Art of Adornment</h2>
+                    <p>Jewelry That Makes Every Moment Shinee</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+
+    <!-- Rich Text Section -->
+    <section class="rich-text">
+        <h2>About Us</h2>
+        <div class="content">
+            <p>Welcome to <strong>Pretus</strong>, where elegance meets craftsmanship. We specialize in offering
+                exquisite jewelry pieces that reflect timeless beauty and modern sophistication. From delicate rings to
+                stunning necklaces, each piece is designed to make you feel special and confident.</p>
+            <p>Our mission is to provide you with an unforgettable shopping experience, offering carefully curated
+                collections that combine quality, style, and affordability. Whether you're looking for a statement piece
+                for a special occasion or everyday elegance, we have something for everyone.</p>
+            <p>At <strong>Pretus</strong>, we believe that jewelry is more than just an accessory—it's a way to express
+                your unique story. Let us help you find the perfect piece that speaks to your heart and enhances your
+                style.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="icon">🚚</i>
+                <h3>Free Shipping</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="feature">
+                <i class="icon">⭐</i>
+                <h3>Quality Products</h3>
+                <p>Guaranteed satisfaction</p>
+            </div>
+            <div class="feature">
+                <i class="icon">💫</i>
+                <h3>24/7 Support</h3>
+                <p>Always here to help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="swiper testimonials-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"My husband surprised me with this necklace for our anniversary. It was such a heartfelt
+                            moment, and having my initials engraved made it even more special!"</p>
+                        <div class="testimonial-author">
+                            <span>- Emily Johnson</span>
+                            <span>via Instagram</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"The craftsmanship of the jewelry is outstanding! I’ve received countless compliments on my
+                            new bracelet. I highly recommend Pretus to anyone looking for quality pieces."</p>
+                        <div class="testimonial-author">
+                            <span>- Carlos Martinez</span>
+                            <span>via Facebook</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"I purchased a pair of earrings for my sister’s birthday, and she was over the moon. The
+                            delivery was prompt, and the packaging was absolutely stunning."</p>
+                        <div class="testimonial-author">
+                            <span>- Sophie Dubois</span>
+                            <span>via Twitter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"I bought a ring for my fiancée, and she couldn’t stop admiring it. The design is so unique,
+                            and the quality is exceptional. Thank you, Pretus!"</p>
+                        <div class="testimonial-author">
+                            <span>- Michael Brown</span>
+                            <span>via Instagram</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"The necklace I ordered arrived just in time for my mother’s birthday. She loved it! The
+                            attention to detail is incredible, and the customer service was top-notch."</p>
+                        <div class="testimonial-author">
+                            <span>- Anna Schmidt</span>
+                            <span>via Facebook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join Our Jewelry Journey</h2>
+            <p>Be the first to know about our new collections, exclusive offers, and insider stories. Sign up now and
+                let us help you shine brighter!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@pretus.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pretus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for banner slider
+        const bannerSwiper = new Swiper('.banner-slider', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+
+        // Fetch products from products.json and dynamically load them
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                const productGrid = document.getElementById('product-grid');
+                data.products.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>$${product.price.toFixed(2)}</p>
+                        <button onclick="window.location.href='product.html?id=${product.id}'">View Details</button>
+                    `;
+                    productGrid.appendChild(productCard);
+                });
+            })
+            .catch(error => console.error('Error loading products:', error));
+        // Initialize Swiper for testimonials slider
+        const testimonialsSwiper = new Swiper('.testimonials-slider', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Auto-scroll every 5 seconds
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

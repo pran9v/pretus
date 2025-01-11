@@ -1,0 +1,220 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Ethnic Style Floral Ring",
+        "shortDescription": "A beautifully crafted floral ring with intricate ethnic designs.",
+        "price": 12.98,
+        "image": "https://img.kwcdn.com/local-goods-image/1fad18f328/9ee26934-d642-42f5-9e80-19114cadb167.jpeg?imageView2/2/w/800/q/70/format/webp",
+        "thumbnails": [
+          "https://img.kwcdn.com/local-goods-image/1fad18f328/9ee26934-d642-42f5-9e80-19114cadb167.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/local-goods-image/1fad18f328/e6dc7a2b-a53a-41d5-b5d7-e3e5e8e240e2.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/local-goods-image/1fad18f328/3e0a1eae-6b28-4a81-ba0f-9e66aed35b31.jpeg?imageView2/2/w/800/q/70/format/webp"
+        ],
+        "details": {
+          "description": "This Ethnic Style Floral Ring is perfect for adding a touch of elegance to your outfit. The intricate floral design is inspired by traditional craftsmanship, making it a unique piece of jewelry.",
+          "features": [
+            "Handcrafted floral design",
+            "Made with high-quality materials",
+            "Lightweight and comfortable to wear",
+            "Perfect for ethnic and casual wear"
+          ],
+          "characteristics": {
+            "Material": "Alloy",
+            "Weight": "10g",
+            "Finish": "Polished"
+          },
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 12.98
+            },
+            {
+              "name": "Medium",
+              "price": 14.98
+            },
+            {
+              "name": "Large",
+              "price": 16.98
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Pendant Collar Necklace",
+        "shortDescription": "A stunning collar necklace with a delicate pendant.",
+        "price": 21.67,
+        "image": "https://img.kwcdn.com/product/fancy/c068a16f-05c3-4207-8210-553d527f40fd.jpg?imageView2/2/w/800/q/70/format/webp",
+        "thumbnails": [
+          "https://img.kwcdn.com/product/fancy/c068a16f-05c3-4207-8210-553d527f40fd.jpg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/fancy/ead872cc-94ab-400d-93c6-93a4a1e5c9f5.jpg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/fancy/a8ab2f0d-d51b-4a3c-bc14-567b7ad31218.jpg?imageView2/2/w/800/q/70/format/webp"
+        ],
+        "details": {
+          "description": "This Pendant Collar Necklace features a beautiful pendant that adds a touch of sophistication to any outfit. The collar design is perfect for both casual and formal occasions.",
+          "features": [
+            "Elegant pendant design",
+            "Adjustable collar length",
+            "Made with durable materials",
+            "Perfect for gifting"
+          ],
+          "characteristics": {
+            "Material": "Stainless Steel",
+            "Weight": "15g",
+            "Finish": "Matte"
+          },
+          "sizes": [
+            {
+              "name": "One Size",
+              "price": 21.67
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "name": "Minimalist Jewelry Ring",
+        "shortDescription": "A sleek and modern minimalist ring.",
+        "price": 35.41,
+        "image": "https://img.kwcdn.com/product/open/2024-06-06/1717658020204-5dddb76443b54c608664c736b06030d5-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+        "thumbnails": [
+          "https://img.kwcdn.com/product/open/2024-06-06/1717658020204-5dddb76443b54c608664c736b06030d5-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/open/2024-06-06/1717658020921-2f9d1102c70c44bb91ca05093ab6de24-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/open/2024-06-06/1717658018973-538946a50877422f95a5ca24092fcb88-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+        ],
+        "details": {
+          "description": "This Minimalist Jewelry Ring is perfect for those who prefer understated elegance. Its simple design makes it versatile and suitable for everyday wear.",
+          "features": [
+            "Sleek and modern design",
+            "Made with high-quality materials",
+            "Lightweight and comfortable",
+            "Ideal for stacking with other rings"
+          ],
+          "characteristics": {
+            "Material": "Sterling Silver",
+            "Weight": "8g",
+            "Finish": "Polished"
+          },
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 35.41
+            },
+            {
+              "name": "Medium",
+              "price": 37.41
+            },
+            {
+              "name": "Large",
+              "price": 39.41
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "name": "Silver Necklace",
+        "shortDescription": "A classic silver necklace for everyday elegance.",
+        "price": 16.99,
+        "image": "https://img.kwcdn.com/product/open/2024-06-18/1718700234402-5a3447afb01b4a3585828cfb3ccd6d66-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+        "thumbnails": [
+          "https://img.kwcdn.com/product/open/2024-06-18/1718700234402-5a3447afb01b4a3585828cfb3ccd6d66-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/fancy/658ee7c2-e8e0-4f9f-83b3-e9e0d56bf25a.jpg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/open/2024-06-18/1718700253143-198c057d3f61423cb74a6014688f8d58-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+        ],
+        "details": {
+          "description": "This Silver Necklace is a timeless piece that complements any outfit. Its simple yet elegant design makes it a must-have in your jewelry collection.",
+          "features": [
+            "Classic silver chain design",
+            "Durable and tarnish-resistant",
+            "Adjustable length",
+            "Perfect for daily wear"
+          ],
+          "characteristics": {
+            "Material": "Sterling Silver",
+            "Weight": "12g",
+            "Finish": "Polished"
+          },
+          "sizes": [
+            {
+              "name": "16 inches",
+              "price": 16.99
+            },
+            {
+              "name": "18 inches",
+              "price": 18.99
+            },
+            {
+              "name": "20 inches",
+              "price": 20.99
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "name": "Moissanite Pendant Necklace",
+        "shortDescription": "A dazzling moissanite pendant necklace.",
+        "price": 29.11,
+        "image": "https://img.kwcdn.com/product/open/2cd5dbd6cd644e5da8f2a1259a19a49a-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+        "thumbnails": [
+          "https://img.kwcdn.com/product/open/2cd5dbd6cd644e5da8f2a1259a19a49a-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/open/cbd533d411ce4307b12e5c3adbeeea36-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/open/a201875823be493caeeaf88224172f42-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+        ],
+        "details": {
+          "description": "This Moissanite Pendant Necklace features a stunning moissanite stone that sparkles with every movement. It’s perfect for adding a touch of glamour to your look.",
+          "features": [
+            "Genuine moissanite stone",
+            "Elegant pendant design",
+            "Comes with a secure clasp",
+            "Ideal for special occasions"
+          ],
+          "characteristics": {
+            "Material": "Sterling Silver",
+            "Weight": "18g",
+            "Finish": "Polished"
+          },
+          "sizes": [
+            {
+              "name": "One Size",
+              "price": 16.99
+            }
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "name": "Pearl Pendant Necklace",
+        "shortDescription": "A timeless pearl pendant necklace.",
+        "price": 26.12,
+        "image": "https://img.kwcdn.com/product/fancy/fdff502c-403a-4e89-b651-fe15c563afb2.jpg?imageView2/2/w/800/q/70/format/webp",
+        "thumbnails": [
+          "https://img.kwcdn.com/product/fancy/fdff502c-403a-4e89-b651-fe15c563afb2.jpg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/fancy/658ee7c2-e8e0-4f9f-83b3-e9e0d56bf25a.jpg?imageView2/2/w/800/q/70/format/webp",
+          "https://img.kwcdn.com/product/open/2024-06-18/1718700253143-198c057d3f61423cb74a6014688f8d58-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+        ],
+        "details": {
+          "description": "This Pearl Pendant Necklace is a classic piece that never goes out of style. The elegant pearl pendant adds a touch of sophistication to any outfit.",
+          "features": [
+            "Genuine pearl pendant",
+            "Adjustable chain length",
+            "Durable and tarnish-resistant",
+            "Perfect for formal occasions"
+          ],
+          "characteristics": {
+            "Material": "Sterling Silver",
+            "Weight": "20g",
+            "Finish": "Polished"
+          },
+          "sizes": [
+            {
+              "name": "One Size",
+              "price": 26.12
+            }
+          ]
+        }
+      }
+    ]
+  }

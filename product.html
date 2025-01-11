@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Your Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.png">
+    <style>
+        .product-features,
+        .product-characteristics,
+        .product-sizes {
+            margin-top: 20px;
+        }
+
+        .product-features h2,
+        .product-characteristics h2,
+        .product-sizes h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-features ul,
+        .product-characteristics ul,
+        .product-sizes ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .product-features li,
+        .product-characteristics li,
+        .product-sizes li {
+            margin-bottom: 5px;
+        }
+
+        .buy-now {
+            background-color: rgba(252, 209, 69, 1);
+            /* Yellow background */
+            color: black;
+            /* White text */
+            border: none;
+            /* Remove default border */
+            padding: 10px 20px;
+            /* Add padding for better appearance */
+            font-size: 16px;
+            /* Adjust font size */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            transition: background-color 0.3s, color 0.3s;
+            /* Smooth transition for hover effect */
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .buy-now:hover {
+            background-color: white;
+            /* White background on hover */
+            color: black;
+            /* Black text on hover */
+            border: 1px solid yellow;
+            /* Optional: Add a yellow border on hover */
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, rgb(233, 239, 44), rgb(10, 10, 2));
+            -webkit-background-clip: text;
+            /* Clip the background to the text */
+            -webkit-text-fill-color: transparent;
+            /* Make the text transparent */
+            background-clip: text;
+            /* Standard property for modern browsers */
+            text-fill-color: transparent;
+            /* Standard property for modern browsers */
+        }
+
+    </style>
+</head>
+
+<body class="product-page">
+    <!-- Header remains the same -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="gradient-text">Pretus</a> <!-- Make the logo text clickable -->
+            </div>
+            <ul>
+                <li><a href="index.html" data-page="home-page">Home</a></li>
+                <li><a href="contact.html" data-page="contact-page">Contact</a></li>
+                <li><a href="privacy.html" data-page="privacy-page">Privacy Policy</a></li>
+                <li><a href="terms.html" data-page="terms-page">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <div class="product-detail">
+        <div class="product-info">
+            <h1 id="productName">Loading...</h1>
+            <p class="price" id="productPrice">$0.00</p>
+            <p class="description" id="productDescription">Loading description...</p>
+
+            <!-- Additional Product Details -->
+            <div class="product-features">
+                <h2>Features</h2>
+                <ul id="productFeatures">
+                    <!-- Features will be dynamically loaded here -->
+                </ul>
+            </div>
+
+            <div class="product-characteristics">
+                <h2>Characteristics</h2>
+                <ul id="productCharacteristics">
+                    <!-- Characteristics will be dynamically loaded here -->
+                </ul>
+            </div>
+
+            <button class="buy-now" onclick="handlePurchase()">Buy Now</button>
+        </div>
+        <div class="product-images">
+            <img src="" alt="Product" class="main-image" id="productImage">
+            <div class="thumbnail-images" id="thumbnailImages">
+                <!-- Thumbnails will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Rest of the content remains the same -->
+
+    <script>
+        // Function to handle the purchase
+        function handlePurchase() {
+            const productName = document.getElementById('productName').textContent;
+            const productPrice = document.getElementById('productPrice').textContent;
+            const productImage = document.getElementById('productImage').src;
+
+            const params = new URLSearchParams();
+            params.append('name', productName);
+            params.append('price', productPrice);
+            params.append('image', productImage);
+
+            window.location.href = `thankyou.html?${params.toString()}`;
+        }
+
+        // Fetch product details based on the ID from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        if (productId) {
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    const product = data.products.find(p => p.id === parseInt(productId));
+                    if (product) {
+                        // Update the product details
+                        document.getElementById('productName').textContent = product.name;
+                        document.getElementById('productPrice').textContent = `$${product.price.toFixed(2)}`;
+                        document.getElementById('productDescription').textContent = product.details.description;
+                        document.getElementById('productImage').src = product.image;
+
+                        // Update features
+                        const productFeatures = document.getElementById('productFeatures');
+                        product.details.features.forEach(feature => {
+                            const li = document.createElement('li');
+                            li.textContent = feature;
+                            productFeatures.appendChild(li);
+                        });
+
+                        // Update characteristics
+                        const productCharacteristics = document.getElementById('productCharacteristics');
+                        for (const [key, value] of Object.entries(product.details.characteristics)) {
+                            const li = document.createElement('li');
+                            li.textContent = `${key}: ${value}`;
+                            productCharacteristics.appendChild(li);
+                        }
+
+                        // Update thumbnails
+                        const thumbnailImages = document.getElementById('thumbnailImages');
+                        product.thumbnails.forEach((thumbnail, index) => {
+                            const img = document.createElement('img');
+                            img.src = thumbnail;
+                            img.alt = `Thumbnail ${index + 1}`;
+                            img.onclick = () => {
+                                document.getElementById('productImage').src = thumbnail;
+                            };
+                            thumbnailImages.appendChild(img);
+                        });
+                    } else {
+                        console.error('Product not found');
+                    }
+                })
+                .catch(error => console.error('Error loading product details:', error));
+        } else {
+            console.error('Product ID not found in URL');
+        }
+    </script>
+</body>
+
+</html>
